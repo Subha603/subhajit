@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript to HTML</title>
+</head>
+<body>
+    <script>
+        function isVowel(character) {
+            const vowels = ['a', 'e', 'i', 'o', 'u'];
+            return vowels.includes(character.toLowerCase());
+        }
+
+        // Get the character from the user
+        const userCharacter = 'e';
+
+        // Check if the character is a vowel
+        if (userCharacter.length === 1) {
+            if (isVowel(userCharacter)) {
+                document.write(userCharacter + " is a vowel.");
+            } else {
+                document.write(userCharacter + " is a consonant.");
+            }
+        } else {
+            document.write("Please enter a single character.");
+        }
+    </script>
+</body>
+</html>

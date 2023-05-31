@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript to HTML</title>
+</head>
+<body>
+    <script>
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Get the email from the user
+        const userEmail = "kundusubhajt";
+
+        // Validate the email
+        if (validateEmail(userEmail)) {
+            document.write(userEmail + " is a valid email address.");
+        } else {
+            document.write(userEmail + " is not a valid email address.");
+        }
+    </script>
+</body>
+</html>

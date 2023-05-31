@@ -1,0 +1,57 @@
+/*create an html web page that display name of search engines in order list format and name of web browsers in unordered list
+ format and apply inline stylesheet on that page*/
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Engines and Web Browsers</title>
+    <style>
+        /* Inline stylesheet */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        #search-engines {
+            text-align: center;
+        }
+
+        #web-browsers {
+            text-align: center;
+        }
+
+        #search-engines li {
+            list-style-type: decimal;
+        }
+
+        #web-browsers li {
+            list-style-type: disc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Engines and Web Browsers</h1>
+
+    <h2>Search Engines</h2>
+    <ol id="search-engines">
+        <li>Google</li>
+        <li>Bing</li>
+        <li>Yahoo</li>
+        <li>DuckDuckGo</li>
+    </ol>
+
+    <h2>Web Browsers</h2>
+    <ul id="web-browsers">
+        <li>Chrome</li>
+        <li>Firefox</li>
+        <li>Safari</li>
+        <li>Edge</li>
+    </ul>
+</body>
+</html>
